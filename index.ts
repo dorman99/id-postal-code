@@ -15,10 +15,10 @@ export const findByPostalCode = async (
   const tr = $("tr");
 
   if (!!tr.length) {
-    return results;
+    return _mapResults($, results);
   }
 
-  return _mapResults($, results);
+  return results;
 };
 
 const _mapResults = (
@@ -36,7 +36,7 @@ const _mapResults = (
       result[key] = value;
     });
 
-    if (Object.entries(result).length > 0) {
+    if (Object.entries(result).length == 5) {
       results.push(result);
     }
   });

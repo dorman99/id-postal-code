@@ -1,6 +1,6 @@
 {
   "name": "id-postal-code",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "indonesia postal code package",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
